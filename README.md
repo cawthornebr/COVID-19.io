@@ -16,7 +16,4 @@ The JHU site above only displays the total number of confirmed, deaths, and reco
 * Python
 * Pandas
 * Jupyter Notebook
-<<<<<<< HEAD
 * Matplotlib
-=======
->>>>>>> 19413254ce9b6f40253fcf96eb62b1b939f62185
