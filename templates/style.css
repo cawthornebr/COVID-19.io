@@ -6,12 +6,12 @@
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li a{
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     margin-left: 10px;
     cursor: pointer;
     background: white;
     border-radius: 3px;
-    font-size: large;
+    font-size: x-large;
 }
 
 .navbar a{
