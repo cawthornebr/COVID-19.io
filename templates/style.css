@@ -1,0 +1,88 @@
+/* Giving our navbar some padding and a background color */
+.navbar {
+    padding: 10px;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li a{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.navbar a{
+    font-size: x-large;
+    padding: 0;
+    margin-left: 15%;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.box{
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.box h1{
+    font-size: xx-large;
+    /* text-underline-position: auto; */
+}
+
+.box h2{
+    font-size: larger;
+    line-height: 40px;
+}
+
+#main-text{
+    width: 95%;
+}
+#main-image{
+    float:left;
+    width: 250px;
+    height:250px;
+    margin-right: 20px;
+}
+
+
+/* #comparison-image{
+    width: 500px;
+    height:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#subtitle{
+    font-size: x-large
+} */
+
+/* #detailed-image{
+    width: 500px;
+    height:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
+
+img {
+    width: 85%;
+    height: auto;
+}
+
+@media (max-width: 660px) {
+    .navbar{
+        padding: 30px;
+        font: xx-large;
+        font-weight: 900;
+    }
+  }
