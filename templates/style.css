@@ -82,7 +82,20 @@ img {
 @media (max-width: 660px) {
     .navbar{
         padding: 30px;
-        font: xx-large;
+        /* text-size-adjust: 400%; */
+        /* font-size: 200px; */
         font-weight: 900;
+    }
+    .navbar-brand{
+        font-size: 75px !important
+    }
+    .dropdown-item{
+        font-size: 40px !important
+    }
+    #navbarDropdown{
+        font-size: 40px !important
+    }
+    .nav-link{
+        font-size: 40px !important
     }
   }
