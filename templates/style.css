@@ -2,8 +2,6 @@
 .navbar {
     padding: 10px;
 }
-.navbar-dark{
-}
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li a{
     display: inline-block;
@@ -84,7 +82,7 @@ img {
     background: rgb(8, 142, 187);
 }
 
-.toggle{
+/* .toggle{
     width: 100%;
     padding: 10px 20px;
     background: darkblue;
@@ -93,7 +91,7 @@ img {
     color: white;
     font-size:30px;
     display: none;
-}
+} */
 
 @media (max-width: 980px) {
     .navbar{
@@ -104,7 +102,7 @@ img {
         font-size:40px;
         padding: 40px;
     }
-    .toggle{
+    /* .toggle{
         /* display: block; */
     }
 
@@ -115,5 +113,5 @@ img {
     ul li{
         display: block;
         text-align: center;
-    }
+    } */
   }
