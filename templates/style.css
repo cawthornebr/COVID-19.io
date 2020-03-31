@@ -5,11 +5,11 @@
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li a{
     display: inline-block;
-    padding: 30px;
+    padding: 20px;
     margin-left: 10px;
     cursor: pointer;
     background: none;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: x-large;
 }
 
@@ -98,20 +98,19 @@ img {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        background: darkblue;
+        /* background: darkblue; */
         font-size:40px;
-        padding: 40px;
+        padding: 10px;
     }
     /* .toggle{
         /* display: block; */
     }
-
-    ul{
+    /* ul{
         width: 100%;
-    }
+    } */
 
     ul li{
-        display: block;
+        /* display: block; */
         text-align: center;
     } */
   }
