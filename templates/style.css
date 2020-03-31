@@ -11,6 +11,8 @@
     background: none;
     border-radius: 20px;
     font-size: x-large;
+    border-bottom: 1px solid transparent;
+    border-color: white;
 }
 
 .navbar a{
@@ -92,6 +94,9 @@ img {
     font-size:30px;
     display: none;
 } */
+.nav-item active{
+    /* border-color: red; */
+}
 
 @media (max-width: 980px) {
     .navbar{
@@ -108,6 +113,11 @@ img {
     /* ul{
         width: 100%;
     } */
+    .navbar li a{
+        /* border-color: red; */
+        border-bottom: 3px solid transparent;
+        border-color: white;
+    }
 
     ul li{
         /* display: block; */
