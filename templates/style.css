@@ -1,8 +1,7 @@
-/* Giving our navbar some padding and a background color */
 .navbar {
     padding: 10px;
 }
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+
 .navbar li a{
     display: inline-block;
     padding: 20px;
@@ -21,19 +20,13 @@
     margin-left: 15%;
 }
 
-body{
-    /* background-color: lightgray; */
-}
-
 .box{
-    /* background-color: white; */
     margin-top: 25px;
     padding: 20px;
 }
 
 .box h1{
     font-size: xx-large;
-    /* text-underline-position: auto; */
 }
 
 .box h2{
@@ -51,30 +44,6 @@ body{
     margin-right: 20px;
 }
 
-
-/* #comparison-image{
-    width: 500px;
-    height:500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#subtitle{
-    font-size: x-large
-} */
-
-/* #detailed-image{
-    width: 500px;
-    height:500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-
-
 img {
     width: 85%;
     height: auto;
@@ -84,43 +53,22 @@ img {
     background: rgb(8, 142, 187);
 }
 
-/* .toggle{
-    width: 100%;
-    padding: 10px 20px;
-    background: darkblue;
-    text-align: right;
-    box-sizing: border-box;
-    color: white;
-    font-size:30px;
-    display: none;
-} */
-.nav-item active{
-    /* border-color: red; */
-}
-
 @media (max-width: 980px) {
     .navbar{
         display: block;
         width: 100%;
         box-sizing: border-box;
-        /* background: darkblue; */
         font-size:40px;
         padding: 10px;
     }
-    /* .toggle{
-        /* display: block; */
-    }
-    /* ul{
-        width: 100%;
-    } */
+
+
     .navbar li a{
-        /* border-color: red; */
         border-bottom: 3px solid transparent;
         border-color: white;
     }
 
     ul li{
-        /* display: block; */
         text-align: center;
-    } */
+    }
   }
