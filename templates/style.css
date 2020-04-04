@@ -51,6 +51,10 @@
     padding: none;
 }
 
+#new1{
+    visibility: visible;
+}
+
 
 img {
     width: 100%;
@@ -80,6 +84,8 @@ img {
 
     #new{
         visibility: visible;
+        border-bottom: none;
+        border-color: none;
     }
 
     .navbar li a{
