@@ -3,7 +3,7 @@ import os
 from glob import glob
 import pandas as pd
 import numpy as np
-
+import datetime as dt
 # This code pulls all data for the state selected and returns a formatted dataframe.
 
 def create_files(state, path, files):
@@ -36,6 +36,8 @@ def create_files(state, path, files):
     df1 = pd.DataFrame(county_list)
     df1.columns = ["FIPS", "County", "State", "Country", "Date", "lat", "lon", 
         "Confirmed", "Deaths", "Recovered", "Active", "Combined_Key"]
+    df1['Date'] = df1['Date'].apply(pd.to_datetime)
+    df1['Date'] = df1['Date'].dt.strftime('%m/%d/%y')
     # df.columns = ["State", "Country", "Date", "lat", "lon", "Confirmed", "Deaths", "Recovered", "Active","County","FIPS", 
     #     "Combined_Key","Incident_Rate","People_Tested", "People_Hospitalized", "UID", "ISO3"]
     # df = df[["FIPS","County","State", "Country","Date", "lat", "lon", "Confirmed", "Deaths", "Recovered", "Active", 

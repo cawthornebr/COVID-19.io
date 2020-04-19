@@ -11,6 +11,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
+  <!-- d3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- d3 -->
 </head>
 
 <section id="section">
@@ -61,14 +67,15 @@
         <div class="box" id="main-text">
           <h1>Texas<h1>
             <section id="figure">
-              <center>-All Counties confirmed cases-</center>
-              <center><small>There are so many counties in Texas, you'll need to zoom in to see the names. You can also right click the image, download it, and can zoom in to see the names.</small></center>
+              <center>-Total confirmed cases in the state-</center>
               <br>
-              <img id="detailed-image" src="..\data\texas_data\texas_bar_confirmed.png">
+              <div id="plot"></div>
+              <script src="..\static\tx.js"></script>
+              <!-- <img id="detailed-image" src="..\data\texas_data\texas_bar_confirmed.png"> -->
               <br>
               <br>
               <center>-Counties under 10 confirmed cases-</center>
-              <center><small>There are so many counties in Texas, you'll need to zoom in to see the names. You can also right click the image, download it, and can zoom in to see the names.</small></center>
+              <!-- <center><small>There are so many counties in Texas, you'll need to zoom in to see the names. You can also right click the image, download it, and can zoom in to see the names.</small></center> -->
               <br>
               <img id="detailed-image" src="..\data\texas_data\texas_bar_confirmed1.png">
               <img id="detailed-image" src="..\data\texas_data\texas_confirmed_fig_1.png">
