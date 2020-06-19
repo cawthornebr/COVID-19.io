@@ -9,7 +9,7 @@ import datetime as dt
 def create_files(state, path, files):
 
     county_list = []
-    county_list_apr12update = []
+    # county_list_apr12update = []
 
     for i in files:
 
@@ -35,7 +35,8 @@ def create_files(state, path, files):
     # df = pd.DataFrame(county_list_apr12update)
     df1 = pd.DataFrame(county_list)
     df1.columns = ["FIPS", "County", "State", "Country", "Date", "lat", "lon", 
-        "Confirmed", "Deaths", "Recovered", "Active", "Combined_Key"]
+        "Confirmed", "Deaths", "Recovered", "Active", "Combined_Key", "Incidence_Rate", "Case-Fatality_Ratio"]
+    df1 = df1.drop(columns=['Incidence_Rate', 'Case-Fatality_Ratio'])
     df1['Date'] = df1['Date'].apply(pd.to_datetime)
     df1['Date'] = df1['Date'].dt.strftime('%m/%d/%y')
     # df.columns = ["State", "Country", "Date", "lat", "lon", "Confirmed", "Deaths", "Recovered", "Active","County","FIPS", 
